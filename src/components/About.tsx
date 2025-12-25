@@ -1,11 +1,22 @@
 const About = () => {
-  const skills = [
-    "User Research",
-    "Wireframing",
-    "Prototyping",
-    "Visual Design",
-    "Design Systems",
-    "Interaction Design",
+  const skills = {
+    "Product & UX": ["Design Thinking", "UI/UX Design", "Personas", "User Flows", "Wireframing", "Usability Testing"],
+    "Design Tools": ["Figma", "FigJam", "Balsamiq", "Miro", "Webflow"],
+    "Programming": ["HTML/CSS/JS", "React.js", "Bootstrap", "Tailwind", "Git"],
+    "Data": ["Data-Driven Decisions", "SQL"],
+  };
+
+  const education = [
+    {
+      degree: "Master of Interaction Design and Electronic Arts",
+      school: "University of Sydney",
+      period: "2022 – 2023",
+    },
+    {
+      degree: "Bachelor of Science in IT",
+      school: "University of Technology Sydney",
+      period: "2019 – 2021",
+    },
   ];
 
   return (
@@ -17,40 +28,60 @@ const About = () => {
               About
             </p>
             <h2 className="font-display text-4xl md:text-5xl tracking-tight mb-8">
-              Creating with purpose
+              Bridging design & technology
             </h2>
             <div className="space-y-6 font-body text-muted-foreground leading-relaxed">
               <p>
-                With over 8 years of experience in digital design, I specialize in 
-                creating intuitive user experiences that bridge the gap between 
-                business objectives and user needs.
+                I'm a passionate UI/UX developer and product manager with 3.5 years of experience 
+                building modern, seamless experiences in the digital age.
               </p>
               <p>
-                My approach combines strategic thinking with meticulous attention 
-                to detail, ensuring every project delivers measurable results 
-                while maintaining aesthetic excellence.
+                My approach combines strategic product thinking with hands-on technical skills, 
+                allowing me to bridge the gap between design, engineering, and business objectives.
               </p>
               <p>
-                Currently based in Copenhagen, available for select projects 
-                and collaborations worldwide.
+                Currently learning more about AI, Psychology & Philosophy, while remaining 
+                open to new opportunities and collaborations.
               </p>
+            </div>
+
+            <div className="mt-12">
+              <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-4">
+                Education
+              </p>
+              <div className="space-y-4">
+                {education.map((edu, index) => (
+                  <div key={index} className="border-l-2 border-foreground pl-4">
+                    <h4 className="font-display text-lg">{edu.degree}</h4>
+                    <p className="font-body text-sm text-muted-foreground">{edu.school}</p>
+                    <p className="font-body text-xs text-muted-foreground">{edu.period}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           <div>
             <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-6">
-              Expertise
+              Skills & Expertise
             </p>
-            <ul className="space-y-4">
-              {skills.map((skill, index) => (
-                <li 
-                  key={skill}
-                  className="font-display text-2xl md:text-3xl border-b border-border pb-4"
-                >
-                  {skill}
-                </li>
+            <div className="space-y-8">
+              {Object.entries(skills).map(([category, items]) => (
+                <div key={category}>
+                  <h4 className="font-display text-lg mb-3">{category}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {items.map((skill) => (
+                      <span 
+                        key={skill} 
+                        className="font-body text-sm px-3 py-1.5 border border-border bg-background"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

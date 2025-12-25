@@ -2,28 +2,40 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    title: "Noir Banking",
-    category: "Fintech App Design",
-    year: "2024",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    title: "KIPI Conference",
+    category: "Project Lead at PPIA",
+    year: "2022",
+    description: "Led team to create a conference website for Indonesian academics sharing PhD research.",
+    tags: ["Figma", "Webflow", "Project Manager"],
+    image: "https://rickyfelix025.vercel.app/home/KIPI_PPIA.png",
+    demoUrl: "https://symposium-ppid.webflow.io/",
   },
   {
-    title: "Minimal Store",
-    category: "E-commerce Platform",
-    year: "2024",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-  },
-  {
-    title: "Flow Analytics",
-    category: "Dashboard Design",
+    title: "Give a Gift",
+    category: "USYD Mobile Computing",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+    description: "Gift gifting solution for long-distance relationships. Featured as one of the best UX solutions.",
+    tags: ["UI/UX", "Figma", "Android Studio", "Firebase"],
+    image: "https://rickyfelix025.vercel.app/home/Give_a_Gift.webp",
+    demoUrl: "https://github.com/rickyfelix19/give-a-gift-copy",
   },
   {
-    title: "Serene Wellness",
-    category: "Mobile App",
+    title: "Bottled Moments",
+    category: "USYD IDEA Studio",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+    description: "Digital experience connecting people to lakes by sending memories and gifts. Presented at mapMIMA.",
+    tags: ["Tailwind CSS", "p5.js", "Resolume", "Figma"],
+    image: "https://rickyfelix025.vercel.app/home/Bottled_Moments.webp",
+    demoUrl: "https://github.com/rickyfelix19/bottled-moments",
+  },
+  {
+    title: "Niamod Properties",
+    category: "USYD Interface Design",
+    year: "2023",
+    description: "House tour interface redesign for Domain Real Estates. Received best solution recognition.",
+    tags: ["Design Thinking", "Figma", "Miro"],
+    image: "https://rickyfelix025.vercel.app/home/Interface_Design.webp",
+    demoUrl: "https://www.figma.com/design/5N7gi9s7N7sToU9dwhGRrh/Niamod-Properties---Website",
   },
 ];
 
@@ -34,10 +46,10 @@ const Work = () => {
         <div className="flex items-end justify-between mb-12 md:mb-16">
           <div>
             <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-3">
-              Selected Projects
+              Featured Projects
             </p>
             <h2 className="font-display text-4xl md:text-5xl tracking-tight">
-              Recent work
+              Selected work
             </h2>
           </div>
         </div>
