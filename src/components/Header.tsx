@@ -5,6 +5,7 @@ const Header = () => {
 
   const navItems = [
     { label: "Work", href: "#work" },
+    { label: "Experience", href: "#experience" },
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ];
@@ -13,7 +14,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <nav className="container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="font-display text-xl md:text-2xl tracking-tight">
-          Studio
+          Ricky Felix
         </a>
 
         {/* Desktop Navigation */}
@@ -28,6 +29,16 @@ const Header = () => {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="https://linktr.ee/rickyfelix25"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-sm tracking-wide px-4 py-2 bg-foreground text-background hover:bg-foreground/90 transition-colors"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -59,6 +70,16 @@ const Header = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="https://linktr.ee/rickyfelix25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-body text-lg px-4 py-2 bg-foreground text-background"
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
       )}
