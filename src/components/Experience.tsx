@@ -70,8 +70,8 @@ const Experience = () => {
                 </div>
                 <ul className="space-y-2">
                   {exp.highlights.map((highlight, i) => (
-                    <li key={i} className="font-body text-sm text-muted-foreground flex items-start gap-2">
-                      <span className="text-foreground mt-1.5 w-1 h-1 bg-foreground rounded-full shrink-0" />
+                    <li key={i} className="font-body text-sm text-muted-foreground flex items-start gap-3">
+                      <span className="mt-1.5 w-2 h-2 bg-primary rounded-full shrink-0" />
                       {highlight}
                     </li>
                   ))}

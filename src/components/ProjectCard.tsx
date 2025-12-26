@@ -26,15 +26,20 @@ const ProjectCard = ({ title, category, year, description, tags, image, demoUrl,
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <h3 className="font-display text-xl md:text-2xl mb-1 group-hover:underline underline-offset-4">{title}</h3>
+              <h3 className="font-display text-xl md:text-2xl mb-1 group-hover:text-primary transition-colors">{title}</h3>
               <p className="font-body text-sm text-muted-foreground">{category}</p>
             </div>
             <span className="font-body text-sm text-muted-foreground shrink-0">{year}</span>
           </div>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">{description}</p>
           <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <span key={tag} className="font-body text-xs px-2 py-1 bg-secondary text-secondary-foreground">
+            {tags.map((tag, i) => (
+              <span 
+                key={tag} 
+                className={`font-body text-xs px-2 py-1 ${
+                  i === 0 ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'
+                }`}
+              >
                 {tag}
               </span>
             ))}
