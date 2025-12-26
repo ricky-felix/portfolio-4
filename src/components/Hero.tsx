@@ -8,7 +8,7 @@ const Hero = () => {
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Hi, I'm{" "}
-            <em className="italic">Ricky Felix</em>
+            <em className="italic text-primary">Ricky Felix</em>
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             Product Manager with hands-on UX design and frontend development experience. 

@@ -8,7 +8,7 @@ const Contact = () => {
           </p>
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tight mb-8">
             Let's create something{" "}
-            <em className="italic">meaningful</em> together
+            <em className="italic text-secondary">meaningful</em> together
           </h2>
           <p className="font-body text-lg text-muted-foreground mb-12 max-w-xl">
             I'm currently open to new opportunities. If you have a project or role 

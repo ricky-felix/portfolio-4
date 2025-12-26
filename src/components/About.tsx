@@ -20,7 +20,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-secondary">
+    <section id="about" className="py-24 md:py-32 bg-muted">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-24">
           <div>
@@ -51,7 +51,7 @@ const About = () => {
               </p>
               <div className="space-y-4">
                 {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-foreground pl-4">
+                  <div key={index} className="border-l-2 border-secondary pl-4">
                     <h4 className="font-display text-lg">{edu.degree}</h4>
                     <p className="font-body text-sm text-muted-foreground">{edu.school}</p>
                     <p className="font-body text-xs text-muted-foreground">{edu.period}</p>
@@ -73,7 +73,7 @@ const About = () => {
                     {items.map((skill) => (
                       <span 
                         key={skill} 
-                        className="font-body text-sm px-3 py-1.5 border border-border bg-background"
+                        className="font-body text-sm px-3 py-1.5 border border-border bg-background hover:border-primary hover:text-primary transition-colors cursor-default"
                       >
                         {skill}
                       </span>
