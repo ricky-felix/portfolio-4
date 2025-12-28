@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+
 interface ProjectCardProps {
+  id: string;
   title: string;
   category: string;
   year: string;
   description: string;
   tags: string[];
   image: string;
-  demoUrl: string;
   index: number;
 }
 
-const ProjectCard = ({ title, category, year, description, tags, image, demoUrl, index }: ProjectCardProps) => {
+const ProjectCard = ({ id, title, category, year, description, tags, image, index }: ProjectCardProps) => {
   return (
     <article 
       className="group opacity-0 animate-fade-up"
       style={{ animationDelay: `${0.1 * index}s` }}
     >
-      <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="block">
+      <Link to={`/work/${id}`} className="block">
         <div className="aspect-[4/3] bg-muted overflow-hidden mb-4">
           <img
             src={image}
@@ -45,7 +47,7 @@ const ProjectCard = ({ title, category, year, description, tags, image, demoUrl,
             ))}
           </div>
         </div>
-      </a>
+      </Link>
     </article>
   );
 };
