@@ -1,4 +1,9 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const About = () => {
+  const { ref: leftRef, isVisible: leftVisible } = useScrollAnimation();
+  const { ref: rightRef, isVisible: rightVisible } = useScrollAnimation();
+
   const skills = {
     "Product & UX": ["Design Thinking", "UI/UX Design", "Personas", "User Flows", "Wireframing", "Usability Testing"],
     "Design Tools": ["Figma", "FigJam", "Balsamiq", "Miro", "Webflow"],
@@ -23,7 +28,10 @@ const About = () => {
     <section id="about" className="py-24 md:py-32 bg-muted">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-24">
-          <div>
+          <div 
+            ref={leftRef as React.RefObject<HTMLDivElement>}
+            className={`scroll-hidden-left ${leftVisible ? 'scroll-visible-x' : ''}`}
+          >
             <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-3">
               About
             </p>
@@ -51,7 +59,10 @@ const About = () => {
               </p>
               <div className="space-y-4">
                 {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-secondary pl-4">
+                  <div 
+                    key={index} 
+                    className="border-l-2 border-secondary pl-4 hover:border-primary transition-colors duration-300 hover:pl-6"
+                  >
                     <h4 className="font-display text-lg">{edu.degree}</h4>
                     <p className="font-body text-sm text-muted-foreground">{edu.school}</p>
                     <p className="font-body text-xs text-muted-foreground">{edu.period}</p>
@@ -61,19 +72,23 @@ const About = () => {
             </div>
           </div>
 
-          <div>
+          <div 
+            ref={rightRef as React.RefObject<HTMLDivElement>}
+            className={`scroll-hidden-right ${rightVisible ? 'scroll-visible-x' : ''}`}
+          >
             <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-6">
               Skills & Expertise
             </p>
             <div className="space-y-8">
-              {Object.entries(skills).map(([category, items]) => (
+              {Object.entries(skills).map(([category, items], categoryIndex) => (
                 <div key={category}>
                   <h4 className="font-display text-lg mb-3">{category}</h4>
                   <div className="flex flex-wrap gap-2">
-                    {items.map((skill) => (
+                    {items.map((skill, skillIndex) => (
                       <span 
                         key={skill} 
-                        className="font-body text-sm px-3 py-1.5 border border-border bg-background hover:border-primary hover:text-primary transition-colors cursor-default"
+                        className="font-body text-sm px-3 py-1.5 border border-border bg-background rounded-md hover:border-primary hover:text-primary hover:shadow-md transition-all duration-300 cursor-default hover:-translate-y-0.5"
+                        style={{ transitionDelay: `${(categoryIndex * 50) + (skillIndex * 30)}ms` }}
                       >
                         {skill}
                       </span>
