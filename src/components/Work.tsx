@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { projects } from "@/data/projects";
+import { projectCards } from "@/data/projectCards";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Work = () => {
@@ -27,7 +27,7 @@ const Work = () => {
           ref={gridRef as React.RefObject<HTMLDivElement>}
           className={`grid md:grid-cols-2 gap-8 md:gap-12 scroll-hidden ${gridVisible ? 'scroll-visible' : ''}`}
         >
-          {projects.map((project, index) => (
+          {projectCards.map((project, index) => (
             <ProjectCard key={project.id} {...project} index={index} />
           ))}
         </div>

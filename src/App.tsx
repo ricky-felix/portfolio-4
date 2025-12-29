@@ -4,7 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import CaseStudy from "./pages/CaseStudy";
+import KIPIConference from "./pages/KIPIConference";
+import GiveAGift from "./pages/GiveAGift";
+import BottledMoments from "./pages/BottledMoments";
+import NiamodProperties from "./pages/NiamodProperties";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -17,7 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/work/:id" element={<CaseStudy />} />
+          <Route path="/work/kipi-conference" element={<KIPIConference />} />
+          <Route path="/work/give-a-gift" element={<GiveAGift />} />
+          <Route path="/work/bottled-moments" element={<BottledMoments />} />
+          <Route path="/work/niamod-properties" element={<NiamodProperties />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
