@@ -24,7 +24,7 @@ const expertiseItems = [
 		icon: Target,
 		title: "Product Management",
 		description:
-			"Driving product strategy, roadmaps, and cross-functional collaboration.",
+			"Driving product strategy, PRD(s), and cross-functional collaboration.",
 	},
 ];
 
