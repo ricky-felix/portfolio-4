@@ -1,8 +1,11 @@
+# Allow major search engines and social media bots
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Twitterbot
 Allow: /
@@ -10,5 +13,17 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Block known aggressive scrapers
+User-agent: SemrushBot
+User-agent: AhrefsBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: SiteBot
+User-agent: PetalBot
+Disallow: /
+
+# Allow other bots with crawl delay
 User-agent: *
 Allow: /
+Crawl-delay: 10
