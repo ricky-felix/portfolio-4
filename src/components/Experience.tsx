@@ -23,7 +23,7 @@ const experiences = [
 			"Designed and developed responsive UI components, establishing design-to-development workflows that improved team velocity.",
 		metrics: [
 			{ label: "30% faster handoffs" },
-			{ label: "5 team members" },
+			{ label: "3 team members" },
 			{ label: "UI system" },
 		],
 	},
@@ -41,7 +41,7 @@ const experiences = [
 		],
 	},
 	{
-		role: "Director of IT",
+		role: "Director of IT (Volunteer)",
 		company: "PPIA Australia",
 		period: "Jul 2021 – Aug 2022",
 		tag: "NON-PROFIT",
@@ -50,7 +50,7 @@ const experiences = [
 		metrics: [
 			{ label: "40% more engagement" },
 			{ label: "20-person team" },
-			{ label: "React.js" },
+			{ label: "Frontend with React.js and Figma" },
 		],
 	},
 ];
