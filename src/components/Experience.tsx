@@ -1,3 +1,5 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const experiences = [
   {
     role: "Product Manager",
@@ -44,10 +46,15 @@ const experiences = [
 ];
 
 const Experience = () => {
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+
   return (
     <section id="experience" className="py-24 md:py-32">
       <div className="container">
-        <div className="mb-12 md:mb-16">
+        <div 
+          ref={headerRef as React.RefObject<HTMLDivElement>}
+          className={`mb-12 md:mb-16 scroll-hidden ${headerVisible ? 'scroll-visible' : ''}`}
+        >
           <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-3">
             Career Journey
           </p>
@@ -58,30 +65,49 @@ const Experience = () => {
 
         <div className="space-y-0">
           {experiences.map((exp, index) => (
-            <article 
-              key={index}
-              className="py-8 border-t border-border last:border-b group"
-            >
-              <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-8">
-                <div>
-                  <h3 className="font-display text-xl md:text-2xl mb-1">{exp.role}</h3>
-                  <p className="font-body text-muted-foreground">{exp.company}</p>
-                  <p className="font-body text-sm text-muted-foreground mt-1">{exp.period}</p>
-                </div>
-                <ul className="space-y-2">
-                  {exp.highlights.map((highlight, i) => (
-                    <li key={i} className="font-body text-sm text-muted-foreground flex items-start gap-3">
-                      <span className="mt-1.5 w-2 h-2 bg-primary rounded-full shrink-0" />
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </article>
+            <ExperienceItem key={index} exp={exp} index={index} />
           ))}
         </div>
       </div>
     </section>
+  );
+};
+
+interface ExperienceItemProps {
+  exp: {
+    role: string;
+    company: string;
+    period: string;
+    highlights: string[];
+  };
+  index: number;
+}
+
+const ExperienceItem = ({ exp, index }: ExperienceItemProps) => {
+  const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 });
+
+  return (
+    <article 
+      ref={ref as React.RefObject<HTMLElement>}
+      className={`py-8 border-t border-border last:border-b group hover-lift scroll-hidden ${isVisible ? 'scroll-visible' : ''}`}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-8">
+        <div>
+          <h3 className="font-display text-xl md:text-2xl mb-1 group-hover:text-primary transition-colors duration-300">{exp.role}</h3>
+          <p className="font-body text-muted-foreground">{exp.company}</p>
+          <p className="font-body text-sm text-muted-foreground mt-1">{exp.period}</p>
+        </div>
+        <ul className="space-y-2">
+          {exp.highlights.map((highlight, i) => (
+            <li key={i} className="font-body text-sm text-muted-foreground flex items-start gap-3 group/item">
+              <span className="mt-1.5 w-2 h-2 bg-primary rounded-full shrink-0 transition-transform duration-300 group-hover/item:scale-125" />
+              <span className="group-hover/item:text-foreground transition-colors duration-300">{highlight}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </article>
   );
 };
 

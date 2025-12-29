@@ -8,7 +8,7 @@ const Hero = () => {
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Hi, I'm{" "}
-            <em className="italic text-primary">Ricky Felix</em>
+            <em className="italic text-primary hover:text-secondary transition-colors duration-500 cursor-default">Ricky Felix</em>
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             Product Manager with hands-on UX design and frontend development experience. 
@@ -18,11 +18,11 @@ const Hero = () => {
           <div className="mt-12 flex flex-wrap items-center gap-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <a
               href="#work"
-              className="inline-flex items-center gap-3 font-body text-sm tracking-wide group"
+              className="inline-flex items-center gap-3 font-body text-sm tracking-wide group hover:text-primary transition-colors duration-300"
             >
               <span className="link-underline">View featured projects</span>
               <svg 
-                className="w-4 h-4 transition-transform group-hover:translate-x-1" 
+                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-2" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
@@ -35,7 +35,7 @@ const Hero = () => {
                 href="https://github.com/rickyfelix19"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="p-2 text-muted-foreground hover:text-foreground hover:scale-110 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ const Hero = () => {
                 href="https://linkedin.com/in/ricky-felix"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="p-2 text-muted-foreground hover:text-foreground hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -55,7 +55,7 @@ const Hero = () => {
               </a>
               <a
                 href="mailto:rickyy.felixx@icloud.com"
-                className="p-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="p-2 text-muted-foreground hover:text-foreground hover:scale-110 transition-all duration-300"
                 aria-label="Email"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

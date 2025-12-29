@@ -1,4 +1,5 @@
 import { Palette, Code, Layers, Target } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const expertiseItems = [
   {
@@ -24,31 +25,42 @@ const expertiseItems = [
 ];
 
 const Expertise = () => {
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation({ threshold: 0.1 });
+
   return (
     <section id="expertise" className="py-20 md:py-32 bg-muted/30">
       <div className="container px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="text-primary font-medium tracking-wide uppercase text-sm mb-4 animate-fade-in">
-            What I Do
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-fade-in">
-            Areas of Expertise
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mb-12 animate-fade-in">
-            Combining design thinking with technical execution to deliver exceptional digital experiences.
-          </p>
+          <div 
+            ref={headerRef as React.RefObject<HTMLDivElement>}
+            className={`scroll-hidden ${headerVisible ? 'scroll-visible' : ''}`}
+          >
+            <p className="text-primary font-medium tracking-wide uppercase text-sm mb-4">
+              What I Do
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Areas of Expertise
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mb-12">
+              Combining design thinking with technical execution to deliver exceptional digital experiences.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div 
+            ref={gridRef as React.RefObject<HTMLDivElement>}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
             {expertiseItems.map((item, index) => (
               <div
                 key={item.title}
-                className="group bg-card border border-border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className={`group bg-card border border-border rounded-2xl p-6 hover-lift glow-on-hover scroll-hidden ${gridVisible ? 'scroll-visible' : ''}`}
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                  <item.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:rotate-6" />
                 </div>
-                <h3 className="font-display font-semibold text-foreground text-lg mb-2">
+                <h3 className="font-display font-semibold text-foreground text-lg mb-2 group-hover:text-primary transition-colors duration-300">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">

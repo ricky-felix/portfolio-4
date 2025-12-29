@@ -1,8 +1,15 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 const Contact = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section id="contact" className="py-24 md:py-32">
       <div className="container">
-        <div className="max-w-3xl">
+        <div 
+          ref={ref as React.RefObject<HTMLDivElement>}
+          className={`max-w-3xl scroll-hidden ${isVisible ? 'scroll-visible' : ''}`}
+        >
           <p className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-3">
             Get in touch
           </p>
@@ -18,11 +25,11 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-6">
             <a
               href="mailto:rickyy.felixx@icloud.com"
-              className="inline-flex items-center gap-3 font-body text-lg group"
+              className="inline-flex items-center gap-3 font-body text-lg group icon-bounce"
             >
               <span className="link-underline">rickyy.felixx@icloud.com</span>
               <svg 
-                className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" 
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
@@ -34,11 +41,11 @@ const Contact = () => {
               href="https://linkedin.com/in/ricky-felix"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-body text-lg group text-muted-foreground hover:text-foreground transition-colors"
+              className="inline-flex items-center gap-3 font-body text-lg group text-muted-foreground hover:text-foreground transition-colors icon-bounce"
             >
               <span className="link-underline">LinkedIn</span>
               <svg 
-                className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" 
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
