@@ -21,7 +21,8 @@ const Hero = () => {
 								className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.2s" }}
 							>
-								Hi, my name is{" "}
+								Hi, my name is
+								<br />
 								<em className="italic text-primary hover:text-secondary transition-colors duration-500 cursor-default">
 									Ricky Felix
 								</em>
