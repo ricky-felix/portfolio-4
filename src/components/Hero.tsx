@@ -15,13 +15,13 @@ const Hero = () => {
 								className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-6 opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.1s" }}
 							>
-								UI/UX Designer with a product mindset
+								UI/UX Engineer with a product mindset
 							</p>
 							<h1
 								className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.2s" }}
 							>
-								Hi, I'm{" "}
+								Hi, my name is{" "}
 								<em className="italic text-primary hover:text-secondary transition-colors duration-500 cursor-default">
 									Ricky Felix
 								</em>
@@ -30,11 +30,12 @@ const Hero = () => {
 								className="font-body text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.3s" }}
 							>
-								Product Manager with hands-on UX design and frontend development
-								experience. I bridge the gap between design and development,
-								creating thoughtful digital experiences backed by research and
-								delivered with precision—from writing PRDs and leading teams to
-								shipping code in React and conducting usability testing.
+								UI/UX design with product management and frontend development
+								experience. I bridge the gap between design, product, and
+								development. Creating thoughtful digital experiences backed by
+								research and delivered with precision—from writing PRDs,
+								designing high-fidelity prototypes, to shipping code in React.js
+								and conducting usability testing.
 							</p>
 							<div
 								className="mt-12 flex flex-wrap items-center gap-6 opacity-0 animate-fade-up"
