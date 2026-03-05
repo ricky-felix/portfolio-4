@@ -31,7 +31,7 @@ const Hero = () => {
 								className="font-body text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.3s" }}
 							>
-								UI/UX design with product management and frontend development
+								UI/UX designer with product management and frontend development
 								experience. I bridge the gap between design, product, and
 								development. Creating thoughtful digital experiences backed by
 								research and delivered with precision—from writing PRDs,
