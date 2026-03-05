@@ -2,6 +2,19 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const experiences = [
 	{
+		role: "Self Employed UI/UX Engineer",
+		company: "Titik Jalin",
+		period: "Sept 2025 – Present",
+		tag: "FREELANCE",
+		description:
+			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
+		metrics: [
+			{ label: "3 projects to showcase" },
+			{ label: "Built using React.js and Supabase" },
+			{ label: "Client-focused web solutions" },
+		],
+	},
+	{
 		role: "Product Manager",
 		company: "Topremit",
 		period: "Apr 2025 – Jun 2025",
