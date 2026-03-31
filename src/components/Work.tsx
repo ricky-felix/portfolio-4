@@ -18,7 +18,7 @@ const Work = () => {
               Featured Projects
             </p>
             <h2 className="font-display text-4xl md:text-5xl tracking-tight">
-              Selected work
+              Selected work (from 10+ projects)
             </h2>
           </div>
         </div>

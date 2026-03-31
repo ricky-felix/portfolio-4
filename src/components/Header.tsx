@@ -7,6 +7,7 @@ const Header = () => {
 	const location = useLocation();
 
 	const navItems = [
+		{ label: "Expertise", href: "#expertise" },
 		{ label: "Work", href: "#work" },
 		{ label: "Experience", href: "#experience" },
 		{ label: "About", href: "#about" },
@@ -15,7 +16,7 @@ const Header = () => {
 
 	const handleNavClick = (
 		e: React.MouseEvent<HTMLAnchorElement>,
-		href: string
+		href: string,
 	) => {
 		e.preventDefault();
 		setIsMenuOpen(false);
@@ -67,7 +68,7 @@ const Header = () => {
 								rel="noopener noreferrer"
 								className="font-body text-sm tracking-wide px-5 py-2.5 ml-2 bg-primary text-primary-foreground rounded-full hover:bg-secondary hover:text-secondary-foreground hover:scale-105 transition-all duration-300 shadow-sm"
 							>
-								Resume
+								Download Resume
 							</a>
 						</li>
 					</ul>
@@ -126,7 +127,7 @@ const Header = () => {
 									rel="noopener noreferrer"
 									className="block text-center font-body text-base px-4 py-3 bg-primary text-primary-foreground rounded-2xl hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
 								>
-									Resume
+									Download Resume
 								</a>
 							</li>
 						</ul>

@@ -7,15 +7,33 @@ const About = () => {
 	const skills = {
 		"Product & UX": [
 			"Design Thinking",
-			"UI/UX Design",
+			"UI Design",
+			"UX Research",
 			"Personas",
 			"User Flows",
 			"Wireframing",
 			"Usability Testing",
 		],
-		"Design Tools": ["Figma", "FigJam", "Balsamiq", "Miro", "Webflow"],
-		Programming: ["HTML/CSS/JS", "React.js", "Bootstrap", "Tailwind", "Git"],
+		"Design Tools": [
+			"Figma",
+			"FigJam",
+			"Balsamiq",
+			"Miro",
+			"Webflow",
+			"Zeplin",
+		],
+		Programming: [
+			"HTML/CSS/JS",
+			"React.js",
+			"Bootstrap",
+			"Tailwind",
+			"Git",
+			"Next.js",
+			"Vite",
+			"Redux",
+		],
 		Data: ["Data-Driven Decisions", "SQL"],
+		AI: ["Prompt Engineering", "AI Tools Exploration"],
 	};
 
 	const education = [
@@ -45,11 +63,11 @@ const About = () => {
 							About
 						</p>
 						<h2 className="font-display text-4xl md:text-5xl tracking-tight mb-8">
-							Bridging design & technology
+							Bridging product & design & technology
 						</h2>
 						<div className="space-y-6 font-body text-muted-foreground leading-relaxed">
 							<p>
-								I'm a passionate UI/UX developer and product manager with ~3
+								I'm a passionate UI/UX developer and product manager with ~2
 								years of experience building modern, seamless experiences in the
 								digital age.
 							</p>
@@ -64,8 +82,9 @@ const About = () => {
 								grounded in real user needs.
 							</p>
 							<p>
-								Currently learning more about AI, Psychology & Philosophy, while
-								remaining open to new opportunities and collaborations.
+								Currently learning more about AI and App Development for my
+								hobbies anb freelancing while remaining open to new
+								opportunities and collaborations.
 							</p>
 						</div>
 
@@ -122,7 +141,7 @@ const About = () => {
 											))}
 										</div>
 									</div>
-								)
+								),
 							)}
 						</div>
 					</div>

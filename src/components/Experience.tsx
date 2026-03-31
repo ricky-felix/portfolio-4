@@ -4,20 +4,21 @@ const experiences = [
 	{
 		role: "Self Employed UI/UX Engineer",
 		company: "Titik Jalin",
-		period: "Sept 2025 – Present",
+		period: "Sept 2025 – Present [7 months]",
 		tag: "FREELANCE",
 		description:
 			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
 		metrics: [
 			{ label: "3 projects to showcase" },
-			{ label: "Built using React.js and Supabase" },
+			{ label: "Built using React.js, Relume UI, and Supabase" },
 			{ label: "Client-focused web solutions" },
+			{ label: "www.titikjalin.space" },
 		],
 	},
 	{
 		role: "Product Manager",
 		company: "Topremit",
-		period: "Apr 2025 – Jun 2025",
+		period: "Apr 2025 – Jun 2025 [3 months]",
 		tag: "FINTECH",
 		description:
 			"Led product strategy for a fintech platform, driving user experience improvements through data-driven decision making and cross-functional collaboration.",
@@ -25,12 +26,13 @@ const experiences = [
 			{ label: "25% fewer tickets" },
 			{ label: "40% less defects" },
 			{ label: "3 releases" },
+			{ label: "www.topremit.com" },
 		],
 	},
 	{
 		role: "UI/UX Developer",
-		company: "TradePro",
-		period: "Aug 2024 – Mar 2025",
+		company: "InterPan",
+		period: "Aug 2024 – Mar 2025 [8 months]",
 		tag: "TRADING PLATFORM",
 		description:
 			"Designed and developed responsive UI components, establishing design-to-development workflows that improved team velocity.",
@@ -38,12 +40,13 @@ const experiences = [
 			{ label: "30% faster handoffs" },
 			{ label: "3 team members" },
 			{ label: "UI system" },
+			{ label: "https://fxinterpan.com/" },
 		],
 	},
 	{
 		role: "Web Designer / Developer",
 		company: "All in IT Solutions",
-		period: "Aug 2022 – Nov 2022",
+		period: "Aug 2022 – Nov 2022 [4 months]",
 		tag: "AGENCY",
 		description:
 			"Delivered client-focused web solutions, combining design thinking with technical implementation to meet business objectives.",
@@ -51,12 +54,13 @@ const experiences = [
 			{ label: "Full redesign" },
 			{ label: "WordPress" },
 			{ label: "Brand assets" },
+			{ label: "https://allinit.com.au/solutions/" },
 		],
 	},
 	{
 		role: "Director of IT (Volunteer)",
 		company: "PPIA Australia",
-		period: "Jul 2021 – Aug 2022",
+		period: "Jul 2021 – Aug 2022 [14 months]",
 		tag: "NON-PROFIT",
 		description:
 			"Led cross-functional volunteer team to redesign and develop a student networking platform serving thousands of Indonesian students.",
@@ -64,6 +68,7 @@ const experiences = [
 			{ label: "40% more engagement" },
 			{ label: "20-person team" },
 			{ label: "Frontend with React.js and Figma" },
+			{ label: "https://www.ppi-australia.org/en" },
 		],
 	},
 ];
@@ -84,7 +89,7 @@ const Experience = () => {
 						Career Journey
 					</p>
 					<h2 className="font-display text-4xl md:text-5xl tracking-tight">
-						Experience
+						Experience (~2 years)
 					</h2>
 				</div>
 
@@ -128,13 +133,15 @@ const ExperienceItem = ({ exp, index }: ExperienceItemProps) => {
 			</div>
 
 			<div className="relative z-10 px-4 md:px-8 pr-24 md:pr-32">
-				{/* Tag and Role */}
+				{/* Tag and Role and Period */}
 				<div className="mb-4">
 					<span className="inline-block px-3 py-1 bg-slate-800 text-white text-xs font-medium tracking-wider rounded mb-4">
 						{exp.tag}
 					</span>
 					<span className="text-muted-foreground mx-2">•</span>
 					<span className="text-muted-foreground">{exp.role}</span>
+					<span className="text-muted-foreground mx-2">•</span>
+					<span className="text-muted-foreground">{exp.period}</span>
 				</div>
 
 				{/* Company Name */}

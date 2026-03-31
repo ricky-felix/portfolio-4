@@ -30,7 +30,7 @@ const Footer = () => {
 					<p className="font-body text-sm text-muted-foreground">
 						This website is continuously being improved. Built with React and
 						Tailwind CSS. <br />
-						Old website version can be found{" "}
+						Old website versions can be found{" "}
 						<a
 							href="https://rickyfelix025.vercel.app/"
 							target="_blank"

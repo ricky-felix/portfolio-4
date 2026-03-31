@@ -4,27 +4,27 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 const expertiseItems = [
 	{
 		icon: Palette,
-		title: "Design Thinking, UI Design, & UX Research",
+		title: "Design Thinking, UI/UX, and Usability Testing",
 		description:
-			"Crafting intuitive interfaces through user-centered design methodologies and research.",
+			"Crafting intuitive interfaces through user research, wireframing, usability testing, and high-fidelity prototyping in Figma.",
 	},
 	{
 		icon: Code,
-		title: "Frontend Programming (React.js)",
+		title: "Frontend Development (React.js)",
 		description:
-			"Building functional prototypes quickly to validate ideas and iterate fast.",
+			"Shipping production web apps in React.js and Tailwind CSS — from client sites — bridging design and working code. Also able to design and code with Next.js, Vite, and Redux.",
 	},
 	{
 		icon: Layers,
-		title: "Design Systems",
+		title: "Design Systems & Handoff",
 		description:
-			"Creating scalable component libraries that ensure consistency across products.",
+			"Building UI component libraries and design-to-development workflows that cut handoff time and keep products consistent using Figma or Zeplin.",
 	},
 	{
 		icon: Target,
 		title: "Product Management",
 		description:
-			"Driving product strategy, PRD(s), and cross-functional collaboration.",
+			"Driving product strategy, PRD(s), and cross-functional collaboration — with a track record of reducing defects and shipping on time using data driven decisions.",
 	},
 ];
 
