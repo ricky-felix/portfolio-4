@@ -25,7 +25,7 @@ const Footer = () => {
 					</ul>
 
 					<p className="font-body text-sm text-muted-foreground">
-						© 2026 Ricky Felix.
+						2026 Ricky Felix - Design with Intention.
 					</p>
 					<p className="font-body text-sm text-muted-foreground">
 						This website is continuously being improved. Built with React and

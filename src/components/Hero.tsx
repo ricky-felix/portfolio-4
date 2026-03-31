@@ -7,7 +7,7 @@ const Hero = () => {
 					<div>
 						<span className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow-sm text-sm font-medium text-slate-600 border border-slate-100 mb-6">
 							<span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-							Open to new opportunities
+							Open to work (ProdMang, UI/UX, Frontend)
 						</span>
 
 						<div>
@@ -15,7 +15,7 @@ const Hero = () => {
 								className="font-body text-sm tracking-widest text-muted-foreground uppercase mb-6 opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.1s" }}
 							>
-								UI/UX Engineer with a product mindset
+								I design experiences that ship.
 							</p>
 							<h1
 								className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight mb-8 opacity-0 animate-fade-up"
@@ -31,12 +31,9 @@ const Hero = () => {
 								className="font-body text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.3s" }}
 							>
-								UI/UX designer with product management and frontend development
-								experience. I bridge the gap between design, product, and
-								development. Creating thoughtful digital experiences backed by
-								research and delivered with precision—from writing PRDs,
-								designing high-fidelity prototypes, to shipping code in React.js
-								and conducting usability testing.
+								Cross disciplinary designer with product management, UI/UX
+								Design, and Frontend development experience. Based in Medan,
+								Indonesia, educated in Sydney, Australia.
 							</p>
 							<div
 								className="mt-12 flex flex-wrap items-center gap-6 opacity-0 animate-fade-up"
