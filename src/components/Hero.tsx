@@ -31,8 +31,8 @@ const Hero = () => {
 								className="font-body text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed opacity-0 animate-fade-up"
 								style={{ animationDelay: "0.3s" }}
 							>
-								Cross disciplinary designer with Product management, UI/UX
-								Design, and Frontend development experience. Based in Medan,
+								Cross disciplinary designer with Product Management, UI/UX
+								Design, and Frontend Development experience. Based in Medan,
 								Indonesia, educated in Sydney, Australia.
 							</p>
 							<div
