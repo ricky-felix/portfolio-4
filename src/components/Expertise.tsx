@@ -10,9 +10,9 @@ const expertiseItems = [
 	},
 	{
 		icon: Code,
-		title: "Frontend Development (React.js)",
+		title: "Frontend Development",
 		description:
-			"Shipping production web apps in React.js and Tailwind CSS — from client sites — bridging design and working code. Also able to design and code with Next.js, Vite, and Redux.",
+			"Shipping production web apps in React.js and Tailwind CSS — from client sites — bridging design and working code. Also able to design and code with React.js and Next.js",
 	},
 	{
 		icon: Layers,

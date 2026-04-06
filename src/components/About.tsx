@@ -29,8 +29,7 @@ const About = () => {
 			"Tailwind",
 			"Git",
 			"Next.js",
-			"Vite",
-			"Redux",
+			"Vite"
 		],
 		Data: ["Data-Driven Decisions", "SQL"],
 		AI: ["Prompt Engineering", "AI Tools Exploration"],
