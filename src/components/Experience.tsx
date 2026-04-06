@@ -4,7 +4,7 @@ const experiences = [
 	{
 		role: "Self Employed UI/UX Engineer",
 		company: "Titik Jalin",
-		period: "Sept 2025 – Present [7 months]",
+		period: "Sept 2025 – Present",
 		tag: "FREELANCE",
 		description:
 			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
@@ -128,7 +128,7 @@ const ExperienceItem = ({ exp, index }: ExperienceItemProps) => {
 			style={{ transitionDelay: `${index * 100}ms` }}
 		>
 			{/* Large background number */}
-			<div className="absolute top-8 right-4 md:right-8 text-[150px] md:text-[200px] font-display font-bold text-slate-300 leading-none pointer-events-none select-none">
+			<div className="experience-number absolute top-8 right-4 md:right-8 text-[150px] md:text-[200px] font-display font-bold leading-none pointer-events-none select-none">
 				{number}
 			</div>
 

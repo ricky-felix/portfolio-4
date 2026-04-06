@@ -96,7 +96,7 @@ const About = () => {
 								{education.map((edu, index) => (
 									<div
 										key={index}
-										className="border-l-2 border-secondary pl-4 hover:border-primary transition-colors duration-300 hover:pl-6"
+										className="border-l-2 border-primary pl-4 hover:border-secondary transition-colors duration-300 hover:pl-6"
 									>
 										<h4 className="font-display text-lg">{edu.degree}</h4>
 										<p className="font-body text-sm text-muted-foreground">

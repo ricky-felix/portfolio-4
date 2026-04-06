@@ -15,7 +15,7 @@ const Contact = () => {
 					</p>
 					<h2 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight mb-10">
 						Let's create something{" "}
-						<em className="italic text-secondary hover:text-primary transition-colors">
+						<em className="italic text-primary hover:text-secondary transition-colors">
 							meaningful
 						</em>{" "}
 						together

@@ -180,6 +180,15 @@
     box-shadow: 0 12px 24px -8px hsl(var(--foreground) / 0.15);
   }
 
+  .experience-number {
+    color: hsl(var(--muted-foreground) / 0.3);
+    transition: color 0.3s ease;
+  }
+
+  article:hover .experience-number {
+    color: hsl(var(--secondary));
+  }
+
   .hover-scale {
     @apply transition-transform duration-300;
   }
