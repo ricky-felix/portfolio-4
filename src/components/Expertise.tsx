@@ -42,7 +42,7 @@ const Expertise = () => {
 						ref={headerRef as React.RefObject<HTMLDivElement>}
 						className={`scroll-hidden ${headerVisible ? "scroll-visible" : ""}`}
 					>
-						<p className="text-primary font-medium tracking-wide uppercase text-sm mb-4">
+						<p className="text-muted-foreground font-medium tracking-wide uppercase text-sm mb-4">
 							What I Do
 						</p>
 						<h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
