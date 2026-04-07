@@ -7,7 +7,7 @@ const Hero = () => {
 					<div>
 						<span className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow-sm text-sm font-medium text-slate-600 border border-slate-100 mb-6">
 							<span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-							Open to work (ProdMang, UI/UX, Frontend)
+							Open to work (ProdMang, UI/UX, Frontend, Consulting, Product Analyst, etc...)
 						</span>
 
 						<div>
