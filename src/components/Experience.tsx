@@ -5,7 +5,7 @@ const experiences = [
 		role: "Full Stack Developer",
 		company: "CV Ide Kreasi Digital",
 		period: "May 2026 – Present",
-		tag: "FREELANCE",
+		tag: "Digital Marketing Agency",
 		description: "A full stack developer at a small in-house software team.",
 		metrics: [
 			{ label: "Handling 2 projects simultaneously" },
