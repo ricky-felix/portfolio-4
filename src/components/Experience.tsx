@@ -2,9 +2,21 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const experiences = [
 	{
+		role: "Full Stack Developer",
+		company: "CV Ide Kreasi Digital",
+		period: "May 2026 – Present",
+		tag: "FREELANCE",
+		description: "A full stack developer at a small in-house software team.",
+		metrics: [
+			{ label: "Handling 2 projects simultaneously" },
+			{ label: "Built using MERN Stack" },
+			{ label: "With cloud integration using AWS" },
+		],
+	},
+	{
 		role: "Self Employed UI/UX Engineer",
 		company: "Titik Jalin",
-		period: "Sept 2025 – Present",
+		period: "Sept 2025 – May 2026 [9 months]",
 		tag: "FREELANCE",
 		description:
 			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
