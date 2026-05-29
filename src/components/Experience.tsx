@@ -5,12 +5,14 @@ const experiences = [
 		role: "Full Stack Developer",
 		company: "CV Ide Kreasi Digital",
 		period: "May 2026 – Present",
-		tag: "Digital Marketing Agency",
-		description: "A full stack developer at a small in-house software team.",
+		tag: "SPORTS BOOKING PLATFORM",
+		description:
+			"As the sole full-stack engineer, single-handedly redesigned and modernized Top-Court managing full lifecycle design and development of the Top-Court.",
 		metrics: [
-			{ label: "Handling 2 projects simultaneously" },
-			{ label: "Built using MERN Stack" },
-			{ label: "With cloud integration using AWS" },
+			{ label: "Modernization of Top-Court V2 UI/UX, Database, and API" },
+			{ label: "Redesigned using Vite, MERN Stack, and MUI" },
+			{ label: "With cloud API integration using AWS and Cloudflare" },
+			{ label: "www.top-court.com" },
 		],
 	},
 	{
