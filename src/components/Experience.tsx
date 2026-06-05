@@ -2,15 +2,29 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const experiences = [
 	{
+		role: "Product Engineer & Growth",
+		company: "CV Karya Agung Sejati",
+		period: "June 2026 - Present",
+		tag: "WATERPROOFING SOLUTIONS",
+		description:
+			"Leading the digital transformation of a family business waterproofing business across product, design, IT, and growth strategy. I build the web presence, streamline internal operations, and drive local SEO to expand the company's reach.",
+		metrics: [
+			{ label: "Digitalize the business processes" },
+			{ label: "Created the website and internal operations" },
+			{ label: "Improve local SEO presence " },
+			{ label: "www.karyaagungsejati.com" },
+		],
+	},
+	{
 		role: "Full Stack Developer",
 		company: "CV Ide Kreasi Digital",
-		period: "May 2026 – Present",
+		period: "May 2026 – June 2026 [2 months]",
 		tag: "SPORTS BOOKING PLATFORM",
 		description:
 			"As the sole full-stack engineer, single-handedly redesigned and modernized Top-Court managing full lifecycle design and development of the Top-Court.",
 		metrics: [
 			{ label: "Modernization of Top-Court V2 UI/UX, Database, and API" },
-			{ label: "Redesigned using Vite, MERN Stack, and MUI" },
+			{ label: "Redesigned using React, Vite, MERN Stack, and MUI v9" },
 			{ label: "With cloud API integration using AWS and Cloudflare" },
 			{ label: "www.top-court.com" },
 		],
