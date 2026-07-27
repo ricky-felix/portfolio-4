@@ -29,7 +29,7 @@ const About = () => {
 			"Tailwind",
 			"Git",
 			"Next.js",
-			"Vite"
+			"Vite",
 		],
 		Data: ["Data-Driven Decisions", "SQL"],
 		AI: ["Prompt Engineering", "AI Tools Exploration"],
@@ -45,6 +45,11 @@ const About = () => {
 			degree: "Bachelor of Science in IT",
 			school: "University of Technology Sydney",
 			period: "2019 – 2021",
+		},
+		{
+			degree: "Diploma of Management Systems",
+			school: "Singapore Institute of Management (SIM GE)",
+			period: "2017 – 2018",
 		},
 	];
 
