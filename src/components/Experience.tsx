@@ -103,7 +103,7 @@ const Experience = () => {
 						Career Journey
 					</p>
 					<h2 className="font-display text-4xl md:text-5xl tracking-tight">
-						Experience (~2 years)
+						Experience (~3 years)
 					</h2>
 				</div>
 
