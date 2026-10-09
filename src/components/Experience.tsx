@@ -2,17 +2,17 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const experiences = [
 	{
-		role: "Product Engineer & Growth",
-		company: "CV Karya Agung Sejati",
-		period: "June 2026 - Present",
-		tag: "WATERPROOFING SOLUTIONS",
+		role: "Self Employed UI/UX Engineer",
+		company: "Titik Jalin",
+		period: "Sept 2025 – Present",
+		tag: "FREELANCE",
 		description:
-			"Leading the digital transformation of a family business waterproofing business across product, design, IT, and growth strategy. I build the web presence, streamline internal operations, and drive local SEO to expand the company's reach.",
+			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
 		metrics: [
-			{ label: "Digitalize the business processes" },
-			{ label: "Created the website and internal operations" },
-			{ label: "Improve local SEO presence " },
-			{ label: "www.karyaagungsejati.com" },
+			{ label: "5 projects to showcase" },
+			{ label: "Built using React.js, Relume UI, and Supabase" },
+			{ label: "Client-focused web solutions" },
+			{ label: "www.titikjalin.space" },
 		],
 	},
 	{
@@ -27,20 +27,6 @@ const experiences = [
 			{ label: "Redesigned using React, Vite, MERN Stack, and MUI v9" },
 			{ label: "With cloud API integration using AWS and Cloudflare" },
 			{ label: "www.top-court.com" },
-		],
-	},
-	{
-		role: "Self Employed UI/UX Engineer",
-		company: "Titik Jalin",
-		period: "Sept 2025 – May 2026 [9 months]",
-		tag: "FREELANCE",
-		description:
-			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
-		metrics: [
-			{ label: "3 projects to showcase" },
-			{ label: "Built using React.js, Relume UI, and Supabase" },
-			{ label: "Client-focused web solutions" },
-			{ label: "www.titikjalin.space" },
 		],
 	},
 	{
