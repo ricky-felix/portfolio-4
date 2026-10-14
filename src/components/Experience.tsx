@@ -9,7 +9,7 @@ const experiences = [
 		description:
 			"A solo freelancing project focused on UI/UX design and frontend development for small businesses, startups, and non-profits. I handle everything from user research and design to development and deployment.",
 		metrics: [
-			{ label: "5 projects to showcase" },
+			{ label: "7 projects to showcase" },
 			{ label: "Built using React.js, Relume UI, and Supabase" },
 			{ label: "Client-focused web solutions" },
 			{ label: "www.titikjalin.space" },
